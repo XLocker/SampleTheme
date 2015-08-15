@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Application name. -->
+    <string name="app_name">Sample Theme</string>
+
+    <!-- Theme name which is displayed in themes list. -->
+    <string name="theme_name">Sample Effect</string>
+
+    <!-- The name of X Locker. -->
+    <string name="locker_app_name">X Locker</string>
+
+    <!-- The message format show to user if X Locker not installed. -->
+    <string name="need_locker_app">Please download %1$s to apply this theme</string>
+
+    <!-- Preferences. -->
+    <string name="preference_title_test">Test</string>
+    <string name="preference_summary_test">Test summary</string>
+
+</resources>

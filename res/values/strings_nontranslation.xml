@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="locker_app_package">com.xlocker.host</string>
+
+</resources>

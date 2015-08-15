@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ........The attrs with "*" means MUST be there........
+  * theme_title: @string the theme name which is displayed in themes list.
+  * theme_preview: @drawable the preview which is displayed in themes list, also displayed as the first screenshot in theme details screen.
+    theme_screenshots: @drawable the second screenshot or @array the screenshots in theme details screen.
+  * theme_wallpaper: @drawable the default wallpaper of this theme.
+  * theme_lockscreen_class: the class's full name of this theme's Lockscreen which extends sdk's Lockscreen 
+    theme_settings_class: the class's full name of this theme's settings activity.
+  * theme_api_level: the sdk version, currently is 3.
+    theme_support_shortcut: whether this theme support shortcut displayed in lock screen.
+    theme_support_notification: whether this theme support notification displayed in lock screen.
+    theme_support_alarm: whether this theme support alarm displayed in lock screen.
+    theme_support_ownertext: whether this theme support owner info displayed in lock screen.
+    theme_support_carrier: whether this theme support carrier name displayed in lock screen.
+ -->
+<theme-info
+    theme_title="@string/theme_name"
+    theme_preview="@drawable/preview_480x854"
+    theme_screenshots="@drawable/screenshot_480x854"
+    theme_wallpaper="@drawable/default_wallpaper"
+    theme_lockscreen_class="com.xlocker.theme.sample.SampleLockscreen"
+    theme_settings_class="com.xlocker.theme.sample.ThemeSettingsActivity"
+    theme_api_level="3"
+    theme_support_shortcut="true"
+    theme_support_notification="true"
+    theme_support_alarm="true"
+    theme_support_ownertext="true" 
+    theme_support_carrier="true">
+</theme-info>

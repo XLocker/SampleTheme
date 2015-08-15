@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.xlocker.core.sdk.widget.CarrierText
+        android:id="@+id/carrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" />
+
+    <!--
+    ClockView from sdk MUST has two TextView children with id "clock_text" and "am_pm",
+    or you should use your own clock view, not this one from sdk.
+    -->
+
+    <com.xlocker.core.sdk.widget.ClockView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carrier"
+        android:layout_centerHorizontal="true" >
+
+        <!-- MUST with id "clock_text". -->
+
+        <TextView
+            android:id="@+id/clock_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:shadowColor="#99000000"
+            android:shadowDy="4.0"
+            android:shadowRadius="4.0"
+            android:singleLine="true"
+            android:textColor="#fff9f9f9"
+            android:textSize="70sp" />
+
+        <!-- MUST with id "am_pm". -->
+
+        <TextView
+            android:id="@+id/am_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/clock_text"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/clock_text"
+            android:ellipsize="none"
+            android:shadowColor="#99000000"
+            android:shadowDy="4.0"
+            android:shadowRadius="4.0"
+            android:singleLine="true"
+            android:textColor="#fff9f9f9"
+            android:textSize="20sp" />
+    </com.xlocker.core.sdk.widget.ClockView>
+
+    <RelativeLayout
+        android:id="@+id/date_and_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clock"
+        android:gravity="center_horizontal" >
+
+        <com.xlocker.core.sdk.widget.DateView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+        <com.xlocker.core.sdk.widget.AlarmText
+            android:id="@+id/alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_toRightOf="@id/date"
+            android:drawableLeft="@drawable/ic_alarm"
+            android:drawablePadding="2.0dip"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <com.xlocker.core.sdk.widget.OwnerText
+        android:id="@+id/owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_and_alarm"
+        android:layout_centerInParent="true"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_unlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Click to unlock"
+        android:textSize="16sp" />
+
+    <com.xlocker.core.sdk.widget.KeyguardShortcutView
+        android:id="@+id/shortcut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_unlock"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:clipChildren="false"
+        android:orientation="horizontal" />
+
+    <com.xlocker.core.sdk.widget.KeyguardMissedEventView
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shortcut"
+        android:layout_below="@id/owner"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:clipChildren="false"
+        android:orientation="vertical" />
+
+</RelativeLayout>
