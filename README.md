@@ -1,7 +1,7 @@
 SampleTheme
 ===========
 
-A sample theme project of X Locker(https://play.google.com/store/apps/details?id=com.xlocker.host)
+A sample theme project of X Locker(https://play.google.com/store/apps/details?id=com.xlocker.host).
 
 Setup
 -----
@@ -11,3 +11,4 @@ Setup
 Document
 ----------------------------
 Currently you can refer to the comments in the source codes.
+Any question, please create github issue.
