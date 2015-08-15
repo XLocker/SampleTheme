@@ -100,7 +100,7 @@
         android:text="Click to unlock"
         android:textSize="16sp" />
 
-    <com.xlocker.core.sdk.widget.KeyguardShortcutView
+    <com.xlocker.theme.sample.SampleShortcutView
         android:id="@+id/shortcut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

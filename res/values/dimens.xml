@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- The distance of swipe to unlock and open the shortcut. -->
+    <dimen name="shortcut_unlock_distance">150dp</dimen>
+
+</resources>
