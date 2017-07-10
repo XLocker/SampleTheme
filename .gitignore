@@ -7,3 +7,9 @@ proguard/
 project.properties
 lint.xml
 
+build/
+.gradle
+.idea
+*.iml
+.DS_Store
+
